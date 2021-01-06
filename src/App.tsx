@@ -1,7 +1,7 @@
 import React from "react";
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
-import { BrowserRouter, Link, Route, Switch, useLocation } from "react-router-dom";
+import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
 
 import Manatee from "./pages/Home";
 import Narwhal from "./pages/About";
@@ -13,33 +13,33 @@ function App(props: any) {
       <h1>Marine Mammals</h1>
       <BrowserRouter>
         <h3>
-          <a>
+          <span>
             <Link to="/manatee">Manatee</Link>
-          </a>
+          </span>
           &nbsp;&bull;&nbsp;
-          <a>
+          <span>
             <Link to="/narwhal">Narwhal</Link>
             &nbsp;&bull;&nbsp;
-          </a>
-          <a>
+          </span>
+          <span>
             <Link to="/whale">Whale</Link>
             &nbsp;&bull;&nbsp;
-          </a>
-          <a>
+          </span>
+          <span>
             <Link to="/whale/beluga">Beluga Whale</Link>
             &nbsp;&bull;&nbsp;
-          </a>
-          <a>
+          </span>
+          <span>
             <Link to="/whale/blue">Blue Whale</Link>
-          </a>
+          </span>
           &nbsp;&bull;&nbsp;
-          <a>
+          <span>
             <Link to="/whale?type=beluga">Beluga Whale</Link>
-          </a>
+          </span>
           &nbsp;&bull;&nbsp;
-          <a>
+          <span>
             <Link to="/whale?type=blue">Blue Whale</Link>
-          </a>
+          </span>
         </h3>
       <hr />
 
