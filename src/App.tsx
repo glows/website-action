@@ -8,7 +8,6 @@ import Narwhal from "./pages/About";
 import Whale from "./pages/Whale";
 
 function App(props: any) {
-  console.log("props: ", props);
   return (
     <div className="App">
       <h1>Marine Mammals</h1>
