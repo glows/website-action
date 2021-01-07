@@ -1,6 +1,10 @@
 import React from 'react'
 
-const About = () => {
+interface Props {
+    
+}
+
+const About = (props: Props) => {
     return (
         <div>
             About

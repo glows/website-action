@@ -4,14 +4,15 @@ import "./App.css";
 import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
 
 import Manatee from "./pages/Home";
-import Narwhal from "./pages/About";
+// import Narwhal from "./pages/Narwhal";
 import Whale from "./pages/Whale";
+import About from "./pages/About";
 
 function App(props: any) {
   return (
     <div className="App">
       <h1>Marine Mammals</h1>
-      <BrowserRouter>
+      <BrowserRouter basename="/website-action">
         <h3>
           <span>
             <Link to="/manatee">Manatee</Link>
@@ -34,7 +35,7 @@ function App(props: any) {
           </span>
           &nbsp;&bull;&nbsp;
           <span>
-            <Link to="/whale?type=beluga">Beluga Whale</Link>
+            <Link to="/about">About</Link>
           </span>
           &nbsp;&bull;&nbsp;
           <span>
@@ -45,15 +46,17 @@ function App(props: any) {
 
 
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Manatee />
           </Route>
           <Route path="/manatee">
             <Manatee />
           </Route>
-          <Route path="/narwhal">
-            <Narwhal />
+
+          <Route path="/about">
+            <About />
           </Route>
+
           <Route path="/whale">
             <Whale />
           </Route>
