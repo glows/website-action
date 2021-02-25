@@ -2,6 +2,12 @@
   "name": "website-action",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -16,13 +22,16 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "typescript": "^4.0.3",
-    "web-vitals": "^0.2.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "web-vitals": "^0.2.4",
+    "axios": "^0.19.1",
+    "classnames": "^2.2.6",
+    "idb": "^5.0.0",
+    "moment": "^2.24.0",
+    "preact": "^10.2.1",
+    "react-hook-form": "^4.3.0",
+    "react-intl": "^3.9.3",
+    "react-router-dom": "^5.1.2",
+    "unistore": "^3.5.1"
   },
   "eslintConfig": {
     "extends": [
